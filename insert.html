@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+Name
+: Commercial
+Description: A two-column, fixed-width design with simple color scheme.
+Version : 1.0
+Released : 20120520
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Tourism Template</title>
+<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.dropotron-1.0.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header-wrapper">
+<div id="header">
+<div id="logo">
+<h1><a href="index.html">Kerala Tourism</a></h1><p><a href="http://templated.co" rel="nofollow"></a></p>
+</div>
+</div>
+</div>
+<!-- end #header -->
+<style>
+form {
+border: 3px solid #f1f1f1;
+}
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+button {
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+button:hover {
+opacity: 0.8;
+}
+.cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
+}
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+}
+img.avatar {
+width: 40%;
+border-radius: 50%;
+}
+.container {
+padding: 16px;
+}
+span.psw {
+float: right;padding-top: 16px;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+display: block;
+float: none;
+}
+.cancelbtn {
+width: 100%;
+}
+}
+</style>
+<h2></h2>
+<!--<form action="/insert.php">-->
+<div id="id01" class="modal">
+<form class="container" action="/New/insert.php" method="post">
+<div class="imgcontainer">
+<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+</div>
+<div class="container">
+<label><b>Tourist Place Name</b></label>
+<input type="text" placeholder="Enter Tourist name" name="T_name">
+<label><b>T Location</b></label>
+<input type="text" placeholder="Enter Tourist place location" name="T_location">
+<label><b>Nearby Airport</b></label>
+<input type="text" placeholder="Enter Nearby Airport" name="Nearby_Airport">
+<button type="submit" onclick = ''>INSERT</button>
+<!--
+<div class="container" style="background-color:#f1f1f1">
+<button type="button" class="cancelbtn">Cancel</button>
+<span class="psw">Forgot <a href="#">password?</a></span>
+</div>-->
+</form>
+<script>
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+</body>
+</html>
